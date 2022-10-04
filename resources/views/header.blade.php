@@ -17,10 +17,10 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Otders</a>
+          <a class="nav-link" href="/myorders">Otders</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cart({{$total}})</a>
+          <a class="nav-link" href="/cartlist">Cart({{$total}})</a>
         </li>
 
         @if (Session::has('user'))
@@ -35,6 +35,7 @@
         </li>
         @else
         <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
         @endif
 
       </ul>
